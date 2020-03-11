@@ -5,9 +5,14 @@ print(cv2.__version__)
 img = cv2.imread('car.jpg', -1)
 # print(img)
 
-cv2.imshow('image',img)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
+cv2.imshow('image', img)
+k = cv2.waitKey(0)
+
+if k == 27:
+    cv2.destroyAllWindows()
+elif k == ord('s'):
+    cv2.imwrite('car123.jpg', img)
+    cv2.destroyAllWindows()
 
 # duplicate of image
-cv2.imwrite('car123.jpg', img)
+# cv2.imwrite('car123.jpg', img)
