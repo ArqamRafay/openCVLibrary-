@@ -6,3 +6,6 @@ Goal
 
 # Capture Video from Camera
 Often, we have to capture live stream with a camera. OpenCV provides a very simple interface to do this. Let's capture a video from the camera (I am using the built-in webcam on my laptop), convert it into grayscale video and display it. Just a simple task to get started.
+
+# Mouse Event Open Cv
+it consist of mouse event, print all mouse event , generate black image using numpy, get x y coordinate , get RGB color from image
